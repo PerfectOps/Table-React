@@ -1,8 +1,6 @@
-arr: []
-
-class Table {
-    constructor() {
-        this.arr = [
+// class Table {
+//     constructor() {
+        let arr = [
             { id: 1, value: 23000, type: "расход", 
             date: "26.04.2020 23:15" },
             { id: 2, value: 5400, type: "расход", 
@@ -24,5 +22,7 @@ class Table {
             { id: 10, value: 40000, type: "доход", 
             date: "11.07.2020 18:04" }
         ]
-    }
-}
+//     }
+// }
+
+export { arr }
