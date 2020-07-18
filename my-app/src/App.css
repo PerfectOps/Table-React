@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.btn {
+  color: black;
+  background-color: rgb(165, 165, 165);
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  user-select: none;
+  /* transition: background 99999999s; */
+}
+
+.btn:focus {
+  background-color: rgb(115, 255, 0);
+  transition: background 0s;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +52,4 @@
     transform: rotate(360deg);
   }
 }
+
