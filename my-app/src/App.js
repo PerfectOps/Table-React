@@ -5,17 +5,6 @@ import {BootstrapTable, TableHeaderColumn}
        from 'react-bootstrap-table';
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
-
-function thousand(mas) {
-  if (mas > 1000) {
-    alert(mas);
-  } 
-  else {
-    alert('No data')
-  }
-}
-
-
 class App extends React.Component {
   handleBtnClick1 = () => {
     this.refs.table.handleFilterData({ type: 'доход' })
@@ -27,7 +16,8 @@ class App extends React.Component {
     this.refs.table.handleFilterData({ date: '07.2020' })
   }
   handleBtnClick4 = () => {
-    this.refs.table.handleFilterData({ value: (thousand(arr)) })
+    const price = arr.filter(item => item.value > 1000)
+    this.refs.table.handleFilterData({ value: price })
   }
   render() {
     return (

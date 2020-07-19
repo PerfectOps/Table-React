@@ -1,4 +1,4 @@
-var arr = [
+const arr = [
   { 
     id: 1, value: 23000, type: "расход", 
     date: "26.04.2020 23:15" 
