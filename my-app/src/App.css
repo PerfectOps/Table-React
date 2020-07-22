@@ -30,13 +30,12 @@
 
 .btn {
   color: black;
-  background-color: rgb(165, 165, 165);
+  background-color: rgb(212, 212, 212);
   border: none;
   outline: none;
   padding: 1.2rem 2rem;
   cursor: pointer;
   user-select: none;
-  /* transition: background 99999999s; */
 }
 
 .btn:focus {
