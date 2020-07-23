@@ -11,13 +11,13 @@ class App extends React.Component {
     this.state = {data: [arr]}
   }
   handleBtnClick1 = () => {
-    this.refs.table.handleFilterData({ type: "доход" })
+    this.refs.table.handleFilterData({ type: "income" })
   }
   handleBtnClick2 = () => {
-    this.refs.table.handleFilterData({ type: "расход" })
+    this.refs.table.handleFilterData({ type: "expense" })
   }
   handleBtnClick3 = () => {
-    this.refs.table.handleFilterData({ date: "07.2020" })
+    this.refs.table.handleFilterData({ date: "2020-08" })
   }
   // handleBtnClick4 = () => {
   //   this.refs.table.handleFilterData({ value: >1000 })
@@ -32,9 +32,9 @@ class App extends React.Component {
           <TableHeaderColumn dataField='date'>Date</TableHeaderColumn>
         </BootstrapTable>
         <div>
-        <button onClick={ this.handleBtnClick1 } className='btn btn-default'>{"доход"}</button>
-        <button onClick={ this.handleBtnClick2 } className='btn btn-default'>{"расход"}</button>
-        <button onClick={ this.handleBtnClick3 } className='btn btn-default'>{"за последний месяц"}</button>
+          <button onClick={ this.handleBtnClick1 } className='btn btn-default'>{"доход"}</button>
+          <button onClick={ this.handleBtnClick2 } className='btn btn-default'>{"расход"}</button>
+          <button onClick={ this.handleBtnClick3 } className='btn btn-default'>{"за последний месяц"}</button>
         {/* <button onClick={ this.handleBtnClick4 } className='btn btn-default'>{"более 1000руб."}</button> */}
         </div>
       </div>
